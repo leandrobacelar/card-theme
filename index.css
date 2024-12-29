@@ -1,4 +1,5 @@
 /* Box sizing rules */
+
 *,
 *::before,
 *::after {
@@ -7,6 +8,97 @@
   padding: 0;
 }
 
+/* Set core root defaults */
+html {
+  overflow-x: hidden;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
 body {
   font-family: "Poppins", serif;
+}
+
+.body {
+  padding: 24px;
+  background-color: darkgoldenrod;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  width: 400px;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.card img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card a {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.card a p {
+  color: black;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.card .card-datetime p {
+  margin-top: 14px;
+}
+
+.card div,
+.card h2,
+.card a,
+.card-info {
+  margin-top: 18px;
+}
+
+.card .card-avatar {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+
+.card p,
+.card span {
+  font-size: 14px;
+}
+
+.card-title-first {
+  text-transform: uppercase;
+}
+
+.card .card-title,
+.card .card-title-first {
+  font-size: 24px;
+}
+
+.card .badge {
+  text-transform: capitalize;
+  padding: 6px 16px;
+  background-color: darkgoldenrod;
+  color: black;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 4px;
 }
